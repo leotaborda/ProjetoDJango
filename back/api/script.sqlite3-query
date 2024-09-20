@@ -1,0 +1,52 @@
+-- database: ../db.sqlite3
+
+SELECT * FROM api_filmes;
+
+INSERT INTO api_filmes (titulo, ano, idioma, classif_id, genre_id)
+VALUES 
+    ('A Origem', 2010, 'Inglês', 5, 1),  -- classif_id 5, genre_id 1
+    ('Matrix', 1999, 'Inglês', 8, 1),   -- classif_id 8, genre_id 1
+    ('Parasita', 2019, 'Coreano', 8, 4), -- classif_id 8, genre_id 4
+    ('Interestelar', 2014, 'Inglês', 5, 1),  -- classif_id 5, genre_id 1
+    ('O Poderoso Chefão', 1972, 'Inglês', 8, 8), -- classif_id 8, genre_id 8
+    ('Pulp Fiction', 1994, 'Inglês', 8, 8), -- classif_id 8, genre_id 8
+    ('O Cavaleiro das Trevas', 2008, 'Inglês', 5, 6), -- classif_id 5, genre_id 6
+    ('Clube da Luta', 1999, 'Inglês', 8, 7), -- classif_id 8, genre_id 7
+    ('Forrest Gump', 1994, 'Inglês', 5, 7), -- classif_id 5, genre_id 7
+    ('Um Sonho de Liberdade', 1994, 'Inglês', 8, 7), -- classif_id 8, genre_id 7
+    ('Os Vingadores', 2012, 'Inglês', 8, 8), -- classif_id 8, genre_id 8
+    ('O Senhor dos Anéis: A Sociedade do Anel', 2001, 'Inglês', 8, 3), -- classif_id 8, genre_id 3
+    ('Gladiador', 2000, 'Inglês', 5, 6), -- classif_id 5, genre_id 6
+    ('O Rei Leão', 1994, 'Inglês', 1, 8), -- classif_id 1, genre_id 8 (verifique se 1 é válido)
+    ('Avatar', 2009, 'Inglês', 5, 1), -- classif_id 5, genre_id 1
+    ('Star Wars: Episódio IV - Uma Nova Esperança', 1977, 'Inglês', 7, 1), -- classif_id 7, genre_id 1
+    ('Titanic', 1997, 'Inglês', 5, 2), -- classif_id 5, genre_id 2
+    ('Os Infiltrados', 2006, 'Inglês', 8, 8), -- classif_id 8, genre_id 8
+    ('Coração Valente', 1995, 'Inglês', 8, 6), -- classif_id 8, genre_id 6
+    ('Amnésia', 2000, 'Inglês', 8, 4), -- classif_id 8, genre_id 4
+    ('Oldboy', 2003, 'Coreano', 8, 4); -- classif_id 8, genre_id 4
+
+
+
+
+INSERT INTO api_genero (genre) 
+VALUES 
+    ('Ficção Científica'),
+    ('Romance'),
+    ('Mistério'),
+    ('Fantasia'),
+    ('Terror'),
+    ('Histórico'),
+    ('Biografia'),
+    ('Aventura');
+
+INSERT INTO api_classif (classif) 
+VALUES 
+    ('L'),
+    ('6+'),
+    ('8+'),
+    ('10+'),
+    ('12+'),
+    ('14+'),
+    ('16+'),
+    ('18+');
